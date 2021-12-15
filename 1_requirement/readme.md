@@ -45,3 +45,16 @@ Basic requirements that are very essential are:
 | ------ |------- |--------- | ------ | ----- |
 |LR01| Isnode valid | checks if all the Nodes entered by the user is valid or not|HR01|IMPLEMENTED|
 |LR02| Is rubecube valid | checks if the entered colors of rubiks cube have 6 colors where 9 are of same suit |HR01|IMPLEMENTED|
+
+
+| ID | Functions | Description | HLR ID | Status (Implemented/Future) |
+| ------ |------- |--------- | ------ | ----- |
+|LR03| Isnode valid | performs rotate operation on the front layer|HR01|IMPLEMENTED|
+|LR04| Is rubecube valid | performs rotate operation on the middle layer |HR03|IMPLEMENTED|
+|LR05| Isnode valid | performs rotate operation on the back layer|HR03|IMPLEMENTED|
+|LR06| Is rubecube valid | performs horizontal motion on upper layer |HR03|IMPLEMENTED|
+|LR07| Isnode valid | performs horizontal motion on the middle layer|HR03|IMPLEMENTED|
+|LR08| Is rubecube valid | performs horizontal motion on the down layer |HR03|IMPLEMENTED|
+|LR09| left vertical | performs vertical motion on the left layer |HR03|IMPLEMENTED|
+|LR10| middle vertical | performs vertical motion on the middle layer |HR03|IMPLEMENTED |
+|LR11| right vertical | performs vertical motion on the right layer |HR03|IMPLEMENTED |
