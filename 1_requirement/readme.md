@@ -7,38 +7,41 @@
 
 WHEN
 
-once the system is fixed in the door, it can continously work 24*7. 
+Whenever there is an unsolved Rubik's cube this project helps in solving it. 
 
 WHAT
 
-It is a password protected lock so no one can opened the door without password.
-
-WHERE
-
- 
+This project is concerned about solving the Rubik's cube by using layer by layer method.
 
 WHOM
 
-Only you can open this lock, because when the password is setting , you entered your own password, no one knows it.
+Anyone who doesn't know how to solve the Rubik's cube can use this project.
  
 HOW
 
-The Door is Only opened when you entered your correct password.
+Implemented using structure, pointers, enum and other functionalities of C.
+
+Basic requirements that are very essential are:
+
+1)A rubik's cube application or a real rubik's cube.
+2)gcc compiler with a good system.
+3)Any of the two linux/windows.
 
 ## DETAILS REQUIREMENTS
 ## High Level Requirements 
 | ID | Description | Category | Status | 
 | ----- | ----- | ------- | ---------|
-| HR01 | 1-9 keys can be used to set passwords | Techincal | IMPLEMENTED | 
-| HR02 | When it is entered a 4 digit password by the user it will display on LCD as “****”. Therefore anyone else can’t see what the user enters | Techincal | IMPLEMENTED |
-| HR03 | After 1minuts time door is locked automatically. | Techincal | IMPLEMENTED |
-| HR04 | If it is a wrong password user received another 3attempts to enter the correct one.then wait for 3 min to log in again. | Techincal | IMPLEMENTED |
+| HR01 | User shall be able to provide colors present in the rubik’s cube. | Techincal | IMPLEMENTED | 
+| HR02 | User shall be able to solve a Rubik’s cube from any starting condition. | Techincal | IMPLEMENTED |
+| HR03 | User shall be able to see all the steps needed to solve the rubik's cube along with the colors displayed on the console. | Techincal | IMPLEMENTED |
+| HR04 |User shall be able to solve the Rubik's cube layer by layer. | Techincal | IMPLEMENTED |
+| HR05 | User should be able to solve the cube in minimum number of steps. | Techincal | FUTURE |
+| HR06 | Displaying a message while the program is figuring out the solution would greatly improve the ease of use | Scenario | FUTURE |
+| HR07 |Adding an option to view general Rubik's cube algorithms which will increase the uses of solving it easily. | Techincal | FUTURE |
 
 ### Low level Requirements
  
-| ID | Description | HLR ID | Status (Implemented/Future) |
-| ------ | --------- | ------ | ----- |
-|LR01| After opening the door if user wants to change his password, after pressing “0” key and giving user id user can change his password.|HR01|IMPLEMENTED|
-|LR02| If user wants to add more people to the system after opening the door pressing “#” key, user can add more users. System will give user id to each password. |HR01|IMPLEMENTED|
-|LR03| 10 users can be added to this system  | HR03 |IMPLEMENTED|
-|LR04| When it make any mistake while entering the password user can delete it by using “*” key. |HR04| IMPLEMENTED |
+| ID | Functions | Description | HLR ID | Status (Implemented/Future) |
+| ------ |------- |--------- | ------ | ----- |
+|LR01| Isnode valid | checks if all the Nodes entered by the user is valid or not|HR01|IMPLEMENTED|
+|LR02| Is rubecube valid | checks if the entered colors of rubiks cube have 6 colors where 9 are of same suit |HR01|IMPLEMENTED|
